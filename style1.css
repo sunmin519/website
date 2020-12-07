@@ -1,0 +1,213 @@
+#slider {
+
+    overflow: hidden;
+  }
+  
+  .slide {
+
+    float: left;
+    position: relative;
+  }
+  
+  #slide-holder {
+    width: 800%;
+    position: relative;
+    left: 0;
+    -webkit-animation: scroller 20s infinite;
+            animation: scroller 20s infinite;
+  }
+  
+  @-webkit-keyframes scroller {
+    0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+    20% {
+        -webkit-transform: translateX(-1920px);
+                transform: translateX(-1920px);
+      }
+    40% {
+        -webkit-transform: translateX(-3840px);
+                transform: translateX(-3840px);
+      }
+    60% {
+          -webkit-transform: translateX(-5760px);
+                  transform: translateX(-5760px);
+        }
+
+    80% {
+        -webkit-transform: translateX(-7680px);
+                transform: translateX(-7680px);
+    }
+    100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+      }
+}
+  
+  @keyframes scroller {
+    0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+    20% {
+        -webkit-transform: translateX(-1920px);
+                transform: translateX(-1920px);
+      }
+    40% {
+        -webkit-transform: translateX(-3840px);
+                transform: translateX(-3840px);
+      }
+    60% {
+          -webkit-transform: translateX(-5760px);
+                  transform: translateX(-5760px);
+        }
+
+    80% {
+        -webkit-transform: translateX(-7680px);
+                transform: translateX(-7680px);
+    }
+    100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+      }
+  }
+  body {
+    font-family: sans-serif;
+  }
+  
+  #slider {
+    margin: 0 auto;
+  }
+  
+  .box1{
+    position: absolute;
+    width: 190px;
+    height: 70px;
+    background-color: rgba(0,0,0, 0.5);
+    transform: translate(330%,790%);
+    text-align: center;
+    border-radius: 15px;
+  }
+  .box1 a{
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      line-height: 70px;
+  }
+  .box1:hover{
+      background-color: rgba(255,255,255,0.8);
+  }
+  .box1:hover a{
+      color: black;
+      font-weight: bold;
+  }
+  .box2{
+    position: absolute;
+    width: 190px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(440%,790%);
+    text-align: center;
+    border-radius: 15px;
+  }
+  .box2 a{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        line-height: 70px;
+  }
+  .box2:hover{
+    background-color: rgba(255,255,255,0.8);
+}
+.box2:hover a{
+    color: black;
+    font-weight: bold;  
+}
+
+  .loginForm {
+    position:absolute;
+    width:400px;
+    height:200px;
+    padding: 30px, 20px;
+    background-color: rgba(0,0,0, 0.5);
+    text-align:center;
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+  }
+  
+  .loginForm h2{
+    text-align: center;
+    margin: 5px;
+    color: white;
+  }
+  
+  .idForm{
+    border-bottom: 2px solid white;
+    margin: 30px;
+    padding: 0px 5px;
+    width: 40%;
+    transform: translate(0,-50%);
+  }
+  
+  .passForm{
+    border-bottom: 2px solid white;
+    margin: 30px;
+    padding: 0px 5px;
+    width: 160px;
+    transform: translate(0,-50%);
+  }
+  
+  .id {
+    width: 100%;
+    border:none;
+    outline: none;
+    color: white;
+    font-size:16px;
+    height:20px;
+    background: none;
+  }
+  
+  .pw {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: white;
+    font-size:16px;
+    height:20px;
+    background: none;
+  }
+  
+  .btn {
+    position:relative;
+    left:40%;
+    top: -53%;
+    transform: translateX(-40%);
+    margin-bottom: -40px;
+    width:35%;
+    height:70px;
+    background: linear-gradient(125deg,#67b4fc,#ffcbf4,#67b4fc);
+    background-position: left;
+    background-size: 200%;
+    color: white;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display:inline;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-position: right;
+  }
+  
+  .bottomText {
+    text-align: center;
+    color: white;
+    transform: translate(0, -300%);
+  }

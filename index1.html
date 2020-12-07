@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>웹프로그래밍 기말과제</title>
+    <link href="style1.css" rel="stylesheet">
+    
+</head>
+
+<body>
+  <div id="slider">
+    <div id="slide-holder">
+        <div class="slide"><img src="1.jpg" width="1920px" height="1080px"></div>
+        <div class="slide"><img src="2.jpg"  width="1920px" height="1080px"></div>
+        <div class="slide"><img src="3.jpg" width="1920px" height="1080px"></div>
+        <div class="slide"><img src="4.jpg" width="1920px" height="1080px"></div>
+        <div class="slide"><img src="5.jpg" width="1920px" height="1080px"></div>
+    </div>
+
+    <div class="box1">
+      <a href="index3.html" target="_blank">여행지 구경하기</a>
+      </div>
+      <div class="box2">
+        <a href="index2.html" target="_blank">여행 계획 짜기</a>
+    </div>
+
+    <form action="index.html" method="post" class="loginForm">
+      <h2>Login</h2>
+      <div class="idForm">
+        <input type="text" class="id" placeholder="ID">
+      </div>
+      <div class="passForm">
+        <input type="password" class="pw" placeholder="PW">
+      </div>
+      <button type="button" class="btn" onclick="button()">
+        LOG IN
+      </button>
+      <script>
+      	let button = () => {
+        	alert('login Button !')
+        }
+      </script>
+      <div class="bottomText">
+        Don't you have ID? <a href="#">sign up</a>
+      </div>
+    </form>
+    </div>
+</body>
+</html>
